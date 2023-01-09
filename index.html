@@ -7,22 +7,29 @@
     <title>Hamburgueria 3D</title>
     <link rel="stylesheet" href="./assets/style/style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="box-degrade">
-        
-    </div>
 
     <h1>Ediburguer</h1>
 
     <h2>Ediburguer, a maneira mais moderna de pedir seu lanche!</h2>
 
-    <p>Nosso fast food prioriza a relação com o cliente,
-    oferecendo tudo o que há de melhor.
+    <p>
+        <strong>
+            Nosso fast food prioriza a relação com o cliente,
+            oferecendo tudo o que há de melhor.
+        </strong>
     </p>
 
+    <div class="home">
+        <p>teste</p>
+    </div>
+
     <div class="lanches">
+
         <model-viewer
         class="img-principal"
         ar
@@ -36,10 +43,14 @@
         reveal="auto"
         camera-controls
         auto-rotate>
+
+        <h3 class="tituloLanche">lanche 1</h3>
     
         <button slot="ar-button" class="button-ar">
             Visualize seu lanche
         </button>
+
+        <p>preço: R$ 15,00</p>
     
         </model-viewer>
 
@@ -57,10 +68,13 @@
         camera-controls
         auto-rotate>
 
+        <h3 class="tituloLanche">lanche 2</h3>
+
         <button slot="ar-button" class="button-ar">
             Visualize seu lanche
         </button>
     
+        <p>preço: R$ 15,00</p>
         </model-viewer>
     </div>
     
