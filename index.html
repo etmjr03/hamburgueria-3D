@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria 3D</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="box-degrade">
+        
+    </div>
+
+    <h1>Ediburguer</h1>
+
+    <h2>Ediburguer, a maneira mais moderna de pedir seu lanche!</h2>
+
+    <p>Nosso fast food prioriza a relação com o cliente,
+    oferecendo tudo o que há de melhor.
+    </p>
+
+    <div class="lanches">
+        <model-viewer
+        class="img-principal"
+        ar
+        ar-modes="scene-viewer quick-look webxr"
+        ar-scale="auto"
+        ar-placement="floor"
+        src="./assets/img/lanche1.glb"
+        ios-src="./assets/img/lanche1.usdz"
+        poster=""
+        shadow-intensity="1"
+        reveal="auto"
+        camera-controls
+        auto-rotate>
+    
+        <button slot="ar-button" class="button-ar">
+            Visualize seu lanche
+        </button>
+    
+        </model-viewer>
+
+        <model-viewer
+        class="img-principal"
+        ar
+        ar-modes="scene-viewer quick-look webxr"
+        ar-scale="auto"
+        ar-placement="floor"
+        src="./assets/img/lanche2.glb"
+        ios-src="./assets/img/lanche2.usdz"
+        poster=""
+        shadow-intensity="1"
+        reveal="auto"
+        camera-controls
+        auto-rotate>
+
+        <button slot="ar-button" class="button-ar">
+            Visualize seu lanche
+        </button>
+    
+        </model-viewer>
+    </div>
+    
+</body>
+</html>
