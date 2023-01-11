@@ -22,11 +22,35 @@ h1, h2, p {
     text-align: center;
 }
 
+button {
+    width: 150px;
+    height: 70px;
+    background: var(--laranja);
+    color: var(--branco);
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    background: var(--branco);
+    color: #000;
+    box-shadow: 0 0 5px 1px rgb(4, 4, 4);
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .img-principal {
     width: 40vw;
     height: 30vh;
     margin: 10px auto;
-    background: var(--laranja);
     border: transparent 1px;
     background: var(--laranja);
     box-shadow: 0 0 5px 1px rgb(4, 4, 4);
@@ -70,5 +94,15 @@ h1, h2, p {
     margin: 10px auto;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    display: block;
+}
+
+.home p {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.imgHome {
+    width: 40vw;
+    height: 30vh;
+    margin: 10px auto;
 }
