@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -51,11 +53,13 @@ button:hover {
 button a {
     text-decoration: none;
     list-style: none;
+    color: var(--branco);
 }
 
 button a:hover {
     text-decoration: none;
     list-style: none;
+    color: var(--preto);
 }
 
 .img-principal {
@@ -116,4 +120,62 @@ button a:hover {
     width: 40vw;
     height: 30vh;
     margin: 10px auto;
+}
+
+.menu {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem var(--preto);
+}
+
+.menu .logo {
+    color: var(--laranja);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--preto);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.menu ul li a {
+    color: var(--preto);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    color: var(--laranja);
+}
+
+.menu i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.divMenu {
+    cursor: pointer;
+    display: none;
+}
+
+.divMenu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--preto);
+    margin: 5px auto;
+}
+
+.divMenu .bar:nth-child(1),
+.divMenu .bar:nth-child(3) {
+    background: var(--laranja);
 }
